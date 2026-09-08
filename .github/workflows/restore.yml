@@ -1,4 +1,5 @@
 name: Verify or restore encrypted DR backup
+run-name: Verify canonical encrypted DR restore
 
 on:
   workflow_dispatch:
