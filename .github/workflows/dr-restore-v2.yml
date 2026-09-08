@@ -30,7 +30,8 @@ jobs:
           python-version: '3.12'
 
       - name: Install pinned restore dependencies
-        run: python -m pip install --disable-pip-version-check --only-binary=:all: --require-hashes -r requirements-restore.lock
+        run: >-
+          python -m pip install --disable-pip-version-check --only-binary=:all: --require-hashes -r requirements-restore.lock
 
       - name: Download and verify encrypted restore
         env:
